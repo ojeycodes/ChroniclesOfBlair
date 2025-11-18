@@ -14,7 +14,7 @@ let hr_dot = document.querySelector('.hr_dot');
 let min_dot = document.querySelector('.min_dot');
 let sec_dot = document.querySelector('.sec_dot');
 
-let endDate = '11/23/2025 00:00:00';
+let endDate = '11/18/2025 11:20:00';
 //date format mm/dd/yyyy
 
 let x = setInterval (function(){
@@ -72,7 +72,7 @@ const story = document.getElementById('story');
 const time = document.getElementById('time');
 const hiddenDiv = document.getElementById('hiddenDiv');
 
-const END_DATE = '11/23/2025 00:00:00'; // mm/dd/yyyy hh:mm:ss
+const END_DATE = '11/18/2025 11:20:00'; // mm/dd/yyyy hh:mm:ss
 
 // Check if countdown has expired
 const IS_EXPIRED = Date.now() > new Date(END_DATE).getTime();
@@ -202,7 +202,7 @@ if (localStorage.getItem(STORAGE_KEY_REVEALED) === 'true') {
   story.style.display = 'none';
   time.style.display = 'none';
   hiddenDiv.classList.remove('revealed');
-  revealBtn.textContent = 'Tap To Unveil Sweetheart 💞';
+  revealBtn.textContent = 'Tap To Unveil, Sweetheart 💞';
 }
 
 // --- Button Click ---
@@ -666,3 +666,4 @@ window.addEventListener('load', () => {
 
 
   // Read more button ends
+
